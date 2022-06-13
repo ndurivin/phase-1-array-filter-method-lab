@@ -18,15 +18,11 @@ const drivers = [
       hometown: 'Tampa Bay' }
   ];
 
-function findMatching(drivers, string){
-            return drivers.filter((result) => result.toLowerCase() === string.toLowerCase());
-    }
-
-const fuzzyMatch = (drivers, string) =>{
-    return drivers.filter(result => result[0] === string[0]);
-}
-
-const matchName = function(drivers, string){
-    return drivers.filter(record => record.name === string);
-}
-
+const findMatching = drivers.filter((name) => {
+  if (driver.name === "Bobby"){
+    return true
+  }else {
+    return false
+  }
+})
+console.log(findMatching)
